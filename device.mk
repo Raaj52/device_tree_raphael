@@ -150,6 +150,12 @@ PRODUCT_PACKAGES += \
 # OTA
 PRODUCT_HOST_PACKAGES += \
     signapk
+	
+# RCS
+PRODUCT_PACKAGES += \
+    com.android.ims.rcsmanager \
+    PresencePolling \
+    RcsService
 
 # Ril
 PRODUCT_PACKAGES += \
