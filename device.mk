@@ -198,6 +198,10 @@ PRODUCT_PACKAGES += \
     TelecommResCommon \
     TelephonyResCommon
 
+# WiFi
+PRODUCT_PACKAGES += \
+    WifiOverlay
+
 # WiFi Display
 PRODUCT_PACKAGES += \
     libnl
