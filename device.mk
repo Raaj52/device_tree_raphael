@@ -218,5 +218,9 @@ PRODUCT_PACKAGES += \
 #PRODUCT_BOOT_JARS += \
 #    WfdCommon
 
+# Remove unwanted packages
+PRODUCT_PACKAGES += \
+    RemovePackages
+
 # Enable updating of APEXes
 $(call inherit-product, $(SRC_TARGET_DIR)/product/updatable_apex.mk)
