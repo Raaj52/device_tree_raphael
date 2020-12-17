@@ -9,12 +9,13 @@ $(call inherit-product, device/xiaomi/raphael/device.mk)
 # Inherit some common Lineage stuff.
 $(call inherit-product, vendor/derp/config/common_full_phone.mk)
 
-# Setup Gapps options
-IS_PHONE := true
+# Setup Derp options
 TARGET_BOOT_ANIMATION_RES := 1080
 TARGET_GAPPS_ARCH := arm64
-TARGET_INCLUDE_STOCK_ARCORE := true
-TARGET_SUPPORTS_GOOGLE_RECORDER := false
+TARGET_FACE_UNLOCK_SUPPORTED := true
+
+# Official-ify
+DERP_BUILDTYPE := Official
 
 # Derp options
 TARGET_USES_BLUR := true
